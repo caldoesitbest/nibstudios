@@ -1,0 +1,44 @@
+<div id="app">
+  <header id="menubar">
+    <div class="brand" title="Nib Vector Studio">
+      <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M10 1.8 15.6 9.2 12.8 18H7.2L4.4 9.2Z"/><path d="M10 1.8v7.4"/><circle cx="10" cy="10.6" r="1.5" fill="currentColor" stroke="none"/></svg>
+      <span>Nib</span>
+    </div>
+    <nav id="menus" aria-label="Main menu"></nav>
+    <div class="mb-right">
+      <span class="lib-state" id="libState"></span>
+      <button class="icon-btn" id="btnTheme" title="Switch interface brightness"></button>
+      <button class="icon-btn" id="btnDock" title="Show or hide panels"></button>
+    </div>
+  </header>
+  <div id="controlbar"></div>
+  <aside id="toolbar" aria-label="Tools"></aside>
+  <main id="center">
+    <div id="tabs"><div class="doctab" id="docTab"></div></div>
+    <div id="stage" class="rulers">
+      <div class="ruler" id="rulerCorner" title="Rulers"></div>
+      <canvas class="ruler" id="rulerTop"></canvas>
+      <canvas class="ruler" id="rulerLeft"></canvas>
+      <div id="viewport">
+        <canvas id="cvUnder"></canvas>
+        <canvas id="cvPaper"></canvas>
+        <canvas id="cvOver"></canvas>
+        <textarea id="textEditor" spellcheck="false" autocomplete="off" hidden></textarea>
+      </div>
+    </div>
+  </main>
+  <aside id="dock" aria-label="Panels">
+    <section class="dgroup">
+      <div class="dtabs" id="dockTabsTop"></div>
+      <div class="dbody" id="dockBodyTop"></div>
+    </section>
+    <div class="dresize" id="dockResize" title="Drag to resize panels"></div>
+    <section class="dgroup">
+      <div class="dtabs" id="dockTabsBottom"></div>
+      <div class="dbody" id="dockBodyBottom"></div>
+    </section>
+  </aside>
+  <footer id="statusbar"></footer>
+</div>
+<div id="toast" hidden></div>
+<input type="file" id="fileInput" hidden>
